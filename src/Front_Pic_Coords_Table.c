@@ -7228,7 +7228,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_GOLEM_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x7,
+		.y_offset = 0x1,
 	},
 	[SPECIES_RAPIDASH_MEGA] =
 	{
@@ -7253,7 +7253,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_MAROWAK_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x5,
 	},
 	[SPECIES_STARMIE_MEGA] =
 	{
