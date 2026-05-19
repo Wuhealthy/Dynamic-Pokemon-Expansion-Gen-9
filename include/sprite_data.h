@@ -21,7 +21,6 @@ extern const u8 gFrontSprite017PidgeottoTiles[];
 extern const u8 gFrontSprite018PidgeotTiles[];
 extern const u8 gFrontSprite019RattataTiles[];
 extern const u8 gFrontSprite020RaticateTiles[];
-extern const u8 gFrontSprite020RaticateMegaTiles[];
 extern const u8 gFrontSprite021SpearowTiles[];
 extern const u8 gFrontSprite022FearowTiles[];
 extern const u8 gFrontSprite023EkansTiles[];
