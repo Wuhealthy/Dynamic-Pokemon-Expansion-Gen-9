@@ -47000,10 +47000,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_FAST,
 		.eggGroup1 = EGG_GROUP_MINERAL,
 		.eggGroup2 = EGG_GROUP_MINERAL,
-		.ability1 = ABILITY_LEVITATE,
-		.ability2 = ABILITY_LEVITATE,
+		.ability1 = ABILITY_AFTERMATH,
+		.ability2 = ABILITY_AFTERMATH,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_LEVITATE,
+		.hiddenAbility = ABILITY_AFTERMATH,
 		.noFlip = TRUE,
 	},
 
