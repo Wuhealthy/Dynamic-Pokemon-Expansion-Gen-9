@@ -46614,9 +46614,9 @@ const struct BaseStats gBaseStats[] =
 	[SPECIES_NIDOKING_MEGA] =
 	{
 		.baseHP = 81,
-		.baseAttack = 152,
-		.baseDefense = 87,
-		.baseSpAttack = 85,
+		.baseAttack = 144,
+		.baseDefense = 85,
+		.baseSpAttack = 95,
 		.baseSpDefense = 85,
 		.baseSpeed = 115,
 		.type1 = TYPE_POISON,
@@ -46637,10 +46637,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_SLOW,
 		.eggGroup1 = EGG_GROUP_MONSTER,
 		.eggGroup2 = EGG_GROUP_FIELD,
-		.ability1 = ABILITY_TOUGHCLAWS,
-		.ability2 = ABILITY_TOUGHCLAWS,
+		.ability1 = ABILITY_POISONTOUCH,
+		.ability2 = ABILITY_POISONTOUCH,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_TOUGHCLAWS,
+		.hiddenAbility = ABILITY_POISONTOUCH,
 		.noFlip = TRUE,
 	},
 
