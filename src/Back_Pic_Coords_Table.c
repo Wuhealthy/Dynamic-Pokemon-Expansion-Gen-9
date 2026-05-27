@@ -6851,7 +6851,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_MIRAIDON] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x2,
 	},
 	[SPECIES_TAUROS_P] =
 	{
@@ -6976,12 +6976,12 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_TERAPAGOS_TERASTAL] =
 	{
 		.size = 0x0,
-		.y_offset = 0x10,
+		.y_offset = 0xB,
 	},
 	[SPECIES_TERAPAGOS_STELLAR] =
 	{
 		.size = 0x0,
-		.y_offset = 0x10,
+		.y_offset = 0x0,
 	},
 	[SPECIES_PECHARUNT] =
 	{
