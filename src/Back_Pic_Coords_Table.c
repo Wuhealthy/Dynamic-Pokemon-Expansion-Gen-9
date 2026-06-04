@@ -6686,7 +6686,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_FRIGIBAX] =
 	{
 		.size = 0x0,
-		.y_offset = 0xd,
+		.y_offset = 0xb,
 	},
 	[SPECIES_ARCTIBAX] =
 	{
@@ -6751,7 +6751,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_SCREAM_TAIL] =
 	{
 		.size = 0x0,
-		.y_offset = 0xa,
+		.y_offset = 0x0,
 	},
 	[SPECIES_BRUTE_BONNET] =
 	{
@@ -6766,7 +6766,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_SLITHER_WING] =
 	{
 		.size = 0x0,
-		.y_offset = 0x5,
+		.y_offset = 0x0,
 	},
 	[SPECIES_SANDY_SHOCKS] =
 	{
@@ -6781,7 +6781,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_IRON_TREADS] =
 	{
 		.size = 0x0,
-		.y_offset = 0x9,
+		.y_offset = 0x4,
 	},
 	[SPECIES_IRON_BUNDLE] =
 	{
@@ -6791,7 +6791,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_IRON_HANDS] =
 	{
 		.size = 0x0,
-		.y_offset = 0x4,
+		.y_offset = 0x0,
 	},
 	[SPECIES_IRON_JUGULIS] =
 	{
@@ -6938,6 +6938,26 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x7,
 	},
+	[SPECIES_OGERPON_TERASTAL] =
+	{
+		.size = 0x0,
+		.y_offset = 7,
+	},
+	[SPECIES_OGERPON_WELLSPRING_TERASTAL] =
+	{
+		.size = 0x0,
+		.y_offset = 0x7,
+	},
+	[SPECIES_OGERPON_HEARTHFLAME_TERASTAL] =
+	{
+		.size = 0x0,
+		.y_offset = 0x7,
+	},
+	[SPECIES_OGERPON_CORNERSTONE_TERASTAL] =
+	{
+		.size = 0x0,
+		.y_offset = 0x7,
+	},
 	[SPECIES_ARCHALUDON] =
 	{
 		.size = 0x0,
@@ -6976,7 +6996,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_TERAPAGOS_TERASTAL] =
 	{
 		.size = 0x0,
-		.y_offset = 0xB,
+		.y_offset = 0x10,
 	},
 	[SPECIES_TERAPAGOS_STELLAR] =
 	{
@@ -7178,7 +7198,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_RAICHU_MEGA_Y] =
 	{
 		.size = 0x0,
-		.y_offset = 0x4,
+		.y_offset = 0x2,
 	},
 	[SPECIES_SANDSLASH_MEGA] =
 	{

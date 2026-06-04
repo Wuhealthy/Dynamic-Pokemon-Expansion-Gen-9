@@ -484,6 +484,12 @@ static const struct LevelUpMove sPikachuLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sRaichuLevelUpLearnset[] = {
+	LEVEL_UP_MOVE( 1, MOVE_MEGAKICK),
+	LEVEL_UP_MOVE( 1, MOVE_FLAIL),
+	LEVEL_UP_MOVE( 1, MOVE_WISH),
+	LEVEL_UP_MOVE( 1, MOVE_RAINDANCE),
+	LEVEL_UP_MOVE( 1, MOVE_ZAPCANNON),
+	LEVEL_UP_MOVE( 1, MOVE_RISINGVOLTAGE),
 	LEVEL_UP_MOVE( 1, MOVE_VOLTTACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_CLOSECOMBAT),
 	LEVEL_UP_MOVE( 1, MOVE_THUNDERSHOCK),
@@ -23901,6 +23907,10 @@ const struct LevelUpMove* const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_OGERPON_WELLSPRING_MASK] = sOgerponLevelUpLearnset,
 	[SPECIES_OGERPON_HEARTHFLAME_MASK] = sOgerponLevelUpLearnset,
 	[SPECIES_OGERPON_CORNERSTONE_MASK] = sOgerponLevelUpLearnset,
+	[SPECIES_OGERPON_TERASTAL] = sOgerponLevelUpLearnset,
+	[SPECIES_OGERPON_WELLSPRING_TERASTAL] = sOgerponLevelUpLearnset,
+	[SPECIES_OGERPON_HEARTHFLAME_TERASTAL] = sOgerponLevelUpLearnset,
+	[SPECIES_OGERPON_CORNERSTONE_TERASTAL] = sOgerponLevelUpLearnset,
 	[SPECIES_ARCHALUDON] = sArchaludonLevelUpLearnset,
 	[SPECIES_HYDRAPPLE] = sHydrappleLevelUpLearnset,
 	[SPECIES_GOUGING_FIRE] = sGougingFireLevelUpLearnset,
