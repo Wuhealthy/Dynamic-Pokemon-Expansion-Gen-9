@@ -7183,7 +7183,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_RATICATE_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0xD,
+		.y_offset = 0x0,
 	},
 	[SPECIES_ARBOK_MEGA] =
 	{

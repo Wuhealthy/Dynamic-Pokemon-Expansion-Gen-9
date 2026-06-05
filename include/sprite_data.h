@@ -6143,6 +6143,7 @@ extern const u8 gIconSprite017PidgeottoTiles[];
 extern const u8 gIconSprite018PidgeotTiles[];
 extern const u8 gIconSprite019RattataTiles[];
 extern const u8 gIconSprite020RaticateTiles[];
+extern const u8 gIconSprite020AriadosMegaTiles[];
 extern const u8 gIconSprite021SpearowTiles[];
 extern const u8 gIconSprite022FearowTiles[];
 extern const u8 gIconSprite023EkansTiles[];
