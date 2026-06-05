@@ -46571,10 +46571,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_FAST,
 		.eggGroup1 = EGG_GROUP_BUG,
 		.eggGroup2 = EGG_GROUP_BUG,
-		.ability1 = ABILITY_SWARM,
-		.ability2 = ABILITY_INSOMNIA,
+		.ability1 = ABILITY_STRONGJAW,
+		.ability2 = ABILITY_STRONGJAW,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_SNIPER,
+		.hiddenAbility = ABILITY_STRONGJAW,
 		.noFlip = TRUE,
 	},
 
