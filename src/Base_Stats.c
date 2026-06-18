@@ -49178,10 +49178,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_SLOW,
 		.eggGroup1 = EGG_GROUP_FIELD,
 		.eggGroup2 = EGG_GROUP_FIELD,
-		.ability1 = ABILITY_SEEDSOWER,
-		.ability2 = ABILITY_SEEDSOWER,
+		.ability1 = ABILITY_BULLETPROOF,
+		.ability2 = ABILITY_BULLETPROOF,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_SEEDSOWER,
+		.hiddenAbility = ABILITY_BULLETPROOF,
 		.noFlip = TRUE,
 	},
 
