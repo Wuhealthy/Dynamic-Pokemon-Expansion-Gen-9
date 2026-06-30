@@ -3261,7 +3261,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_FERROTHORN] =
 	{
 		.size = 0x0,
-		.y_offset = 0xa,
+		.y_offset = 0xe,
 	},
 	[SPECIES_KLINK] =
 	{
@@ -4361,7 +4361,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_BLASTOISE_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x2,
 	},
 	[SPECIES_BEEDRILL_MEGA] =
 	{
@@ -4371,7 +4371,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_PIDGEOT_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x3,
+		.y_offset = 0x7,
 	},
 	[SPECIES_ALAKAZAM_MEGA] =
 	{
@@ -5041,12 +5041,12 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_SOLGALEO] =
 	{
 		.size = 0x0,
-		.y_offset = 0x3,
+		.y_offset = 0x8,
 	},
 	[SPECIES_LUNALA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x2,
 	},
 	[SPECIES_NIHILEGO] =
 	{
@@ -5176,7 +5176,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_MUK_A] =
 	{
 		.size = 0x0,
-		.y_offset = 0x6,
+		.y_offset = 0x8,
 	},
 	[SPECIES_EXEGGUTOR_A] =
 	{
@@ -5391,7 +5391,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_NECROZMA_DAWN_WINGS] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x2,
 	},
 	[SPECIES_NECROZMA_ULTRA] =
 	{
@@ -7088,7 +7088,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_CINDERACE_GIGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x4,
 	},
 	[SPECIES_INTELEON_GIGA] =
 	{

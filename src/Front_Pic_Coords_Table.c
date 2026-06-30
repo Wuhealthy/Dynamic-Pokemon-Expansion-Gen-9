@@ -4106,7 +4106,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_AVALUGG] =
 	{
 		.size = 0x0,
-		.y_offset = 0x6,
+		.y_offset = 0xd,
 	},
 	[SPECIES_NOIBAT] =
 	{
@@ -4966,7 +4966,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_TURTONATOR] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x6,
 	},
 	[SPECIES_TOGEDEMARU] =
 	{
@@ -5041,12 +5041,12 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_SOLGALEO] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x8,
 	},
 	[SPECIES_LUNALA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x2,
 	},
 	[SPECIES_NIHILEGO] =
 	{
