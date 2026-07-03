@@ -46316,12 +46316,12 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_TERAPAGOS_TERASTAL] =
 	{
-		.baseHP = 95,
-		.baseAttack = 95,
-		.baseDefense = 110,
-		.baseSpAttack = 105,
-		.baseSpDefense = 110,
-		.baseSpeed = 85,
+		.baseHP 		= 95,
+		.baseAttack 	= 95,
+		.baseDefense 	= 110,
+		.baseSpAttack 	= 105,
+		.baseSpDefense 	= 110,
+		.baseSpeed 		= 85,
 		.type1 = TYPE_NORMAL,
 		.type2 = TYPE_NORMAL,
 		.catchRate = 255,
@@ -46373,7 +46373,7 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_SLOW,
 		.eggGroup1 = EGG_GROUP_UNDISCOVERED,
 		.eggGroup2 = EGG_GROUP_UNDISCOVERED,
-		.ability1 = ABILITY_NONE,
+		.ability1 = ABILITY_INTIMIDATE,
 		.ability2 = ABILITY_NONE,
 		.safariZoneFleeRate = 0,
 		.hiddenAbility = ABILITY_NONE,
