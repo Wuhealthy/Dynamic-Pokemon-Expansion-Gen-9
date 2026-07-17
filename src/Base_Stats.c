@@ -47165,10 +47165,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_FAST,
 		.eggGroup1 = EGG_GROUP_FIELD,
 		.eggGroup2 = EGG_GROUP_FIELD,
-		.ability1 = ABILITY_DRIZZLE,
-		.ability2 = ABILITY_DRIZZLE,
+		.ability1 = ABILITY_POISONPOINT,
+		.ability2 = ABILITY_POISONPOINT,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_DRIZZLE,
+		.hiddenAbility = ABILITY_POISONPOINT,
 		.noFlip = TRUE,
 	},
 
