@@ -7,6 +7,7 @@ import itertools
 import hashlib
 import subprocess
 import sys
+import re
 from datetime import datetime
 from string import StringFileConverter
 from tm_tutor import TMDataBuilder, TutorDataBuilder
@@ -58,6 +59,158 @@ ASFLAGS = ['-mthumb', '-I', ASSEMBLY]
 LDFLAGS = ['BPRE.ld', '-T', 'linker.ld']
 CFLAGS = ['-mthumb', '-mno-thumb-interwork', '-mcpu=arm7tdmi', '-mtune=arm7tdmi',
           '-mno-long-calls', '-march=armv4t', '-Wall', '-Wextra', '-Os', '-fira-loop-pressure', '-fipa-pta']
+
+
+LEGACY_ABILITY_MAP = {
+    'ABILITY_GORILLATACTICS': 'ABILITY_LEGACY_GORILLATACTICS',
+    'ABILITY_NEUTRALIZINGGAS': 'ABILITY_LEGACY_NEUTRALIZINGGAS',
+    'ABILITY_PASTELVEIL': 'ABILITY_LEGACY_PASTELVEIL',
+    'ABILITY_HUNGERSWITCH': 'ABILITY_LEGACY_HUNGERSWITCH',
+    'ABILITY_QUICKDRAW': 'ABILITY_LEGACY_QUICKDRAW',
+    'ABILITY_UNSEENFIST': 'ABILITY_LEGACY_UNSEENFIST',
+    'ABILITY_CURIOUSMEDICINE': 'ABILITY_LEGACY_CURIOUSMEDICINE',
+    'ABILITY_TRANSISTOR': 'ABILITY_LEGACY_TRANSISTOR',
+    'ABILITY_DRAGONSMAW': 'ABILITY_LEGACY_DRAGONSMAW',
+    'ABILITY_GRIMNEIGH': 'ABILITY_LEGACY_GRIMNEIGH',
+    'ABILITY_ASONE_CHILLING': 'ABILITY_LEGACY_ASONE_CHILLING',
+    'ABILITY_ASONE_GRIM': 'ABILITY_LEGACY_ASONE_GRIM',
+    'ABILITY_LINGERINGAROMA': 'ABILITY_LEGACY_LINGERINGAROMA',
+    'ABILITY_QUARKDRIVE': 'ABILITY_LEGACY_QUARKDRIVE',
+    'ABILITY_CHILLINGNEIGH': 'ABILITY_MOXIE',
+    'ABILITY_SEEDSOWER': 'ABILITY_GRASSYSURGE',
+    'ABILITY_THERMALEXCHANGE': 'ABILITY_STEAMENGINE',
+    'ABILITY_ANGERSHELL': 'ABILITY_WEAKARMOR',
+    'ABILITY_PURIFYINGSALT': 'ABILITY_IMMUNITY',
+    'ABILITY_WELLBAKEDBODY': 'ABILITY_STEAMENGINE',
+    'ABILITY_WINDRIDER': 'ABILITY_ANGERPOINT',
+    'ABILITY_GUARDDOG': 'ABILITY_INNERFOCUS',
+    'ABILITY_ROCKYPAYLOAD': 'ABILITY_STEELWORKER',
+    'ABILITY_WINDPOWER': 'ABILITY_BERSERK',
+    'ABILITY_ZEROTOHERO': 'ABILITY_TORRENT',
+    'ABILITY_COMMANDER': 'ABILITY_NONE',
+    'ABILITY_ELECTROMORPHOSIS': 'ABILITY_COLORCHANGE',
+    'ABILITY_PROTOSYNTHESIS': 'ABILITY_LEGACY_QUARKDRIVE',
+    'ABILITY_GOODASGOLD': 'ABILITY_CLEARBODY',
+    'ABILITY_VESSELOFRUIN': 'ABILITY_STALL',
+    'ABILITY_SWORDOFRUIN': 'ABILITY_STALL',
+    'ABILITY_TABLETOFRUIN': 'ABILITY_STALL',
+    'ABILITY_BEADSOFRUIN': 'ABILITY_STALL',
+    'ABILITY_ORICHALCUMPULSE': 'ABILITY_DROUGHT',
+    'ABILITY_HADRONENGINE': 'ABILITY_ELECTRICSURGE',
+    'ABILITY_OPPORTUNIST': 'ABILITY_DANCER',
+    'ABILITY_CUDCHEW': 'ABILITY_HARVEST',
+    'ABILITY_SHARPNESS': 'ABILITY_STRONGJAW',
+    'ABILITY_SUPREMEOVERLORD': 'ABILITY_HUGEPOWER',
+    'ABILITY_COSTAR': 'ABILITY_LEGACY_CURIOUSMEDICINE',
+    'ABILITY_TOXICDEBRIS': 'ABILITY_POISONPOINT',
+    'ABILITY_ARMORTAIL': 'ABILITY_DAZZLING',
+    'ABILITY_EARTHEATER': 'ABILITY_VOLTABSORB',
+    'ABILITY_MYCELIUMMIGHT': 'ABILITY_MOLDBREAKER',
+    'ABILITY_HOSPITALITY': 'ABILITY_NONE',
+    'ABILITY_MINDSEYE': 'ABILITY_SCRAPPY',
+    'ABILITY_EMBODYASPECT_TEAL': 'ABILITY_NONE',
+    'ABILITY_EMBODYASPECT_HEARTHFLAME': 'ABILITY_NONE',
+    'ABILITY_EMBODYASPECT_WELLSPRING': 'ABILITY_NONE',
+    'ABILITY_EMBODYASPECT_CORNERSTONE': 'ABILITY_NONE',
+    'ABILITY_TOXICCHAIN': 'ABILITY_POISONTOUCH',
+    'ABILITY_SUPERSWEETSYRUP': 'ABILITY_INTIMIDATE',
+    'ABILITY_TERASHIFT': 'ABILITY_ICEFACE',
+    'ABILITY_TERASHELL': 'ABILITY_BLAZE',
+    'ABILITY_TERAFORMZERO': 'ABILITY_NONE',
+    'ABILITY_POISONPUPPETEER': 'ABILITY_PLUS',
+    'ABILITY_AIRLOCK': 'ABILITY_CLOUDNINE',
+    'ABILITY_VITALSPIRIT': 'ABILITY_INSOMNIA',
+    'ABILITY_WHITESMOKE': 'ABILITY_CLEARBODY',
+    'ABILITY_PUREPOWER': 'ABILITY_HUGEPOWER',
+    'ABILITY_IRONBARBS': 'ABILITY_ROUGHSKIN',
+    'ABILITY_SOLIDROCK': 'ABILITY_FILTER',
+    'ABILITY_TURBOBLAZE': 'ABILITY_MOLDBREAKER',
+    'ABILITY_TERAVOLT': 'ABILITY_MOLDBREAKER',
+    'ABILITY_LIBERO': 'ABILITY_PROTEAN',
+    'ABILITY_WIMPOUT': 'ABILITY_EMERGENCYEXIT',
+    'ABILITY_QUEENLYMAJESTY': 'ABILITY_DAZZLING',
+    'ABILITY_POWEROFALCHEMY': 'ABILITY_RECEIVER',
+    'ABILITY_PROPELLERTAIL': 'ABILITY_STALWART',
+    'ABILITY_TANGLINGHAIR': 'ABILITY_GOOEY',
+    'ABILITY_FULLMETALBODY': 'ABILITY_CLEARBODY',
+    'ABILITY_EVAPORATE': 'ABILITY_STORMDRAIN',
+    'ABILITY_DRILLBEAK': 'ABILITY_MERCILESS',
+}
+
+# Species whose old DPE records used an effect-sharing byte instead of their
+# actual ability identity.  These values feed the canonical u16 table only.
+SPECIES_ABILITY_OVERRIDES = {
+    'SPECIES_GALLADE': ('ABILITY_STEADFAST', 'ABILITY_SHARPNESS', 'ABILITY_JUSTIFIED'),
+    'SPECIES_KLEAVOR': ('ABILITY_SWARM', 'ABILITY_SHEERFORCE', 'ABILITY_SHARPNESS'),
+    'SPECIES_KLAWF': ('ABILITY_ANGERSHELL', 'ABILITY_SHELLARMOR', 'ABILITY_REGENERATOR'),
+    'SPECIES_ESPATHRA': ('ABILITY_OPPORTUNIST', 'ABILITY_FRISK', 'ABILITY_SPEEDBOOST'),
+    'SPECIES_FLAMIGO': ('ABILITY_SCRAPPY', 'ABILITY_TANGLEDFEET', 'ABILITY_COSTAR'),
+    'SPECIES_VELUZA': ('ABILITY_MOLDBREAKER', 'ABILITY_NONE', 'ABILITY_SHARPNESS'),
+    'SPECIES_FARIGIRAF': ('ABILITY_CUDCHEW', 'ABILITY_ARMORTAIL', 'ABILITY_SAPSIPPER'),
+    'SPECIES_WALKING_WAKE': ('ABILITY_PROTOSYNTHESIS', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_TREADS': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_BUNDLE': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_HANDS': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_JUGULIS': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_MOTH': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_THORNS': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_VALIANT': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_LEAVES': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_WO_CHIEN': ('ABILITY_TABLETOFRUIN', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_CHIEN_PAO': ('ABILITY_SWORDOFRUIN', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_TING_LU': ('ABILITY_VESSELOFRUIN', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_CHI_YU': ('ABILITY_BEADSOFRUIN', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_URSALUNA_BLOODMOON': ('ABILITY_MINDSEYE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_HYDRAPPLE': ('ABILITY_SUPERSWEETSYRUP', 'ABILITY_REGENERATOR', 'ABILITY_STICKYHOLD'),
+    'SPECIES_GOUGING_FIRE': ('ABILITY_PROTOSYNTHESIS', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_RAGING_BOLT': ('ABILITY_PROTOSYNTHESIS', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_BOULDER': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_IRON_CROWN': ('ABILITY_QUARKDRIVE', 'ABILITY_NONE', 'ABILITY_NONE'),
+    'SPECIES_TERAPAGOS_TERASTAL': ('ABILITY_TERASHELL', 'ABILITY_NONE', 'ABILITY_NONE'),
+}
+
+
+def GenerateAbilityTables():
+    source_path = os.path.join(SRC, 'Base_Stats.c')
+    generated_dir = os.path.join(SRC, 'generated')
+    os.makedirs(generated_dir, exist_ok=True)
+    with open(source_path, encoding='utf-8', errors='replace') as source_file:
+        source = source_file.read()
+
+    ability_fields = re.compile(r'(\.(?:ability1|ability2|hiddenAbility)\s*=\s*)(ABILITY_[A-Z0-9_]+)')
+    legacy_source = ability_fields.sub(lambda m: m.group(1) + LEGACY_ABILITY_MAP.get(m.group(2), 'ABILITY_NONE')
+                                       if m.group(2) in LEGACY_ABILITY_MAP else m.group(0), source)
+    legacy_source = legacy_source.replace('#include "defines.h"', '#include "../defines.h"')
+    legacy_source = legacy_source.replace('#include "../include/', '#include "../../include/')
+    with open(os.path.join(generated_dir, 'Base_Stats_Legacy.c'), 'w', encoding='utf-8', newline='\n') as output:
+        output.write(legacy_source)
+
+    entries = []
+    current_species = None
+    current = {'ability1': 'ABILITY_NONE', 'ability2': 'ABILITY_NONE', 'hiddenAbility': 'ABILITY_NONE'}
+    for line in source.splitlines():
+        species_match = re.match(r'\s*\[(SPECIES_[A-Z0-9_]+)\]\s*=', line)
+        if species_match:
+            if current_species is not None:
+                entries.append((current_species, current.copy()))
+            current_species = species_match.group(1)
+            current = {'ability1': 'ABILITY_NONE', 'ability2': 'ABILITY_NONE', 'hiddenAbility': 'ABILITY_NONE'}
+        field_match = re.search(r'\.(ability1|ability2|hiddenAbility)\s*=\s*(ABILITY_[A-Z0-9_]+)', line)
+        if current_species is not None and field_match:
+            current[field_match.group(1)] = field_match.group(2)
+    if current_species is not None:
+        entries.append((current_species, current))
+
+    entries = [(species, dict(zip(('ability1', 'ability2', 'hiddenAbility'), SPECIES_ABILITY_OVERRIDES[species])))
+               if species in SPECIES_ABILITY_OVERRIDES else (species, abilities)
+               for species, abilities in entries]
+
+    with open(os.path.join(generated_dir, 'Species_Abilities.c'), 'w', encoding='utf-8', newline='\n') as output:
+        output.write('#include "../defines.h"\n#include "../../include/abilities.h"\n#include "../../include/base_stats.h"\n\n')
+        output.write('const struct SpeciesAbilities gSpeciesAbilities[] =\n{\n')
+        for species, abilities in entries:
+            output.write('    [%s] = {%s, %s, %s},\n' % (species, abilities['ability1'], abilities['ability2'], abilities['hiddenAbility']))
+        output.write('};\n')
 
 
 class Master:
@@ -263,20 +416,26 @@ def GetFlagsFromFlagFile(filePath: str) -> [str]:
 def ProcessSpriteSet(fileListing: [str], flags: [str], outputFile: str, title: str):
     assembledFile = os.path.join(ASSEMBLY, 'generated', outputFile)
     if (not os.path.isfile(assembledFile)
+            or os.path.getsize(assembledFile) <= len('@THIS IS A GENERATED FILE! DO NOT MODIFY IT!\n')
             or max(list(map(os.path.getmtime, fileListing))) > os.path.getmtime(assembledFile)):  # If a sprite has been modified
         print("Processing {}.".format(title))
-        combinedFile = open(assembledFile, 'w')
-        combinedFile.write('@THIS IS A GENERATED FILE! DO NOT MODIFY IT!\n')
-        for sprite in fileListing:
-            assembled = sprite.split('.png')[0] + '.s'
+        temporaryFile = assembledFile + '.tmp'
+        try:
+            with open(temporaryFile, 'w') as combinedFile:
+                combinedFile.write('@THIS IS A GENERATED FILE! DO NOT MODIFY IT!\n')
+                for sprite in fileListing:
+                    assembled = sprite.split('.png')[0] + '.s'
 
-            if (not os.path.isfile(assembled)
-                    or os.path.getmtime(sprite) > os.path.getmtime(assembled)):
-                RunCommand([GR, sprite] + flags + ['-o', assembled])
+                    if (not os.path.isfile(assembled)
+                            or os.path.getmtime(sprite) > os.path.getmtime(assembled)):
+                        RunCommand([GR, sprite] + flags + ['-o', assembled])
 
-            with open(assembled, 'r') as tempFile:
-                combinedFile.write(tempFile.read())
-        combinedFile.close()
+                    with open(assembled, 'r') as tempFile:
+                        combinedFile.write(tempFile.read())
+            os.replace(temporaryFile, assembledFile)
+        finally:
+            if os.path.isfile(temporaryFile):
+                os.remove(temporaryFile)
 
 
 def ProcessSpriteGraphics():
@@ -366,6 +525,8 @@ def RunGlob(globString: str, fn) -> map:
     if sys.version_info > (3, 4):
         try:
             files = glob(os.path.join(directory, globString), recursive=True)
+            if globString == '**/*.c':
+                files = [file for file in files if os.path.normpath(file) != os.path.normpath(os.path.join(SRC, 'Base_Stats.c'))]
             return map(fn, files)
 
         except TypeError:
@@ -405,6 +566,7 @@ def main():
             pass
 
         ProcessSpriteGraphics()
+        GenerateAbilityTables()
         TMDataBuilder()
         TutorDataBuilder()
 
