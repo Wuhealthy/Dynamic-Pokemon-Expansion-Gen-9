@@ -7353,7 +7353,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_ESPEON_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x6,
+		.y_offset = 0x2,
 	},
 	[SPECIES_UMBREON_MEGA] =
 	{
