@@ -2688,6 +2688,7 @@ static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
 static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_WATERGUN),
 	LEVEL_UP_MOVE( 1, MOVE_WATERGUN),
+	LEVEL_UP_MOVE( 1, MOVE_EARTHPOWER),
 	LEVEL_UP_MOVE( 1, MOVE_HELPINGHAND),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAILWHIP),
@@ -2708,6 +2709,7 @@ static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
 static const struct LevelUpMove sJolteonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_THUNDERSHOCK),
 	LEVEL_UP_MOVE( 1, MOVE_THUNDERSHOCK),
+	LEVEL_UP_MOVE( 1, MOVE_STEELBEAM),
 	LEVEL_UP_MOVE( 1, MOVE_HELPINGHAND),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAILWHIP),
@@ -2728,6 +2730,7 @@ static const struct LevelUpMove sJolteonLevelUpLearnset[] = {
 static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_EMBER),
 	LEVEL_UP_MOVE( 1, MOVE_EMBER),
+	LEVEL_UP_MOVE( 1, MOVE_MORNINGSUN),
 	LEVEL_UP_MOVE( 1, MOVE_HELPINGHAND),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAILWHIP),
@@ -3975,6 +3978,7 @@ static const struct LevelUpMove sQuagsireLevelUpLearnset[] = {
 static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_CONFUSION),
 	LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+	LEVEL_UP_MOVE( 1, MOVE_ENCORE),
 	LEVEL_UP_MOVE( 1, MOVE_HELPINGHAND),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAILWHIP),
@@ -3995,6 +3999,7 @@ static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
 static const struct LevelUpMove sUmbreonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_PURSUIT),
 	LEVEL_UP_MOVE( 1, MOVE_PURSUIT),
+	LEVEL_UP_MOVE( 1, MOVE_VENOSHOCK),
 	LEVEL_UP_MOVE( 1, MOVE_HELPINGHAND),
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAILWHIP),

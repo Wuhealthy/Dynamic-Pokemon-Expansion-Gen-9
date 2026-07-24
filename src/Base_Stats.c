@@ -47571,11 +47571,11 @@ const struct BaseStats gBaseStats[] =
 	[SPECIES_UMBREON_MEGA] =
 	{
 		.baseHP = 95,
-		.baseAttack = 85,
+		.baseAttack = 110,
 		.baseDefense = 130,
-		.baseSpAttack = 80,
-		.baseSpDefense = 160,
-		.baseSpeed = 75,
+		.baseSpAttack = 75,
+		.baseSpDefense = 150,
+		.baseSpeed = 65,
 		.type1 = TYPE_DARK,
 		.type2 = TYPE_POISON,
 		.catchRate = 45,
