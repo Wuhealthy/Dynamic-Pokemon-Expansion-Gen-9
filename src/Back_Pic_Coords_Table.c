@@ -6938,6 +6938,10 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x7,
 	},
+	[SPECIES_OGERPON_TERASTAL] = { .size = 0x0, .y_offset = 0x6 },
+	[SPECIES_OGERPON_WELLSPRING_TERASTAL] = { .size = 0x0, .y_offset = 0x6 },
+	[SPECIES_OGERPON_HEARTHFLAME_TERASTAL] = { .size = 0x0, .y_offset = 0x6 },
+	[SPECIES_OGERPON_CORNERSTONE_TERASTAL] = { .size = 0x0, .y_offset = 0x6 },
 	[SPECIES_ARCHALUDON] =
 	{
 		.size = 0x0,

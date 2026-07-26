@@ -46083,6 +46083,66 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = TRUE,
 	},
 
+	[SPECIES_OGERPON_TERASTAL] =
+	{
+		.baseHP = 80, .baseAttack = 120, .baseDefense = 84,
+		.baseSpAttack = 60, .baseSpDefense = 96, .baseSpeed = 110,
+		.type1 = TYPE_GRASS, .type2 = TYPE_GRASS,
+		.catchRate = 5, .expYield = 0,
+		.evYield_Attack = 3,
+		.item1 = ITEM_NONE, .item2 = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(100), .eggCycles = 0,
+		.friendship = 50, .growthRate = GROWTH_SLOW,
+		.eggGroup1 = EGG_GROUP_UNDISCOVERED, .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+		.ability1 = ABILITY_EMBODYASPECTTEALMASK, .ability2 = ABILITY_NONE,
+		.hiddenAbility = ABILITY_NONE, .noFlip = TRUE,
+	},
+
+	[SPECIES_OGERPON_WELLSPRING_TERASTAL] =
+	{
+		.baseHP = 80, .baseAttack = 120, .baseDefense = 84,
+		.baseSpAttack = 60, .baseSpDefense = 96, .baseSpeed = 110,
+		.type1 = TYPE_GRASS, .type2 = TYPE_WATER,
+		.catchRate = 5, .expYield = 0,
+		.evYield_Attack = 3,
+		.item1 = ITEM_NONE, .item2 = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(100), .eggCycles = 0,
+		.friendship = 50, .growthRate = GROWTH_SLOW,
+		.eggGroup1 = EGG_GROUP_UNDISCOVERED, .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+		.ability1 = ABILITY_EMBODYASPECTWELLSPRINGMASK, .ability2 = ABILITY_NONE,
+		.hiddenAbility = ABILITY_NONE, .noFlip = TRUE,
+	},
+
+	[SPECIES_OGERPON_HEARTHFLAME_TERASTAL] =
+	{
+		.baseHP = 80, .baseAttack = 120, .baseDefense = 84,
+		.baseSpAttack = 60, .baseSpDefense = 96, .baseSpeed = 110,
+		.type1 = TYPE_GRASS, .type2 = TYPE_FIRE,
+		.catchRate = 5, .expYield = 0,
+		.evYield_Attack = 3,
+		.item1 = ITEM_NONE, .item2 = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(100), .eggCycles = 0,
+		.friendship = 50, .growthRate = GROWTH_SLOW,
+		.eggGroup1 = EGG_GROUP_UNDISCOVERED, .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+		.ability1 = ABILITY_EMBODYASPECTHEARTHFLAMEMASK, .ability2 = ABILITY_NONE,
+		.hiddenAbility = ABILITY_NONE, .noFlip = TRUE,
+	},
+
+	[SPECIES_OGERPON_CORNERSTONE_TERASTAL] =
+	{
+		.baseHP = 80, .baseAttack = 120, .baseDefense = 84,
+		.baseSpAttack = 60, .baseSpDefense = 96, .baseSpeed = 110,
+		.type1 = TYPE_GRASS, .type2 = TYPE_ROCK,
+		.catchRate = 5, .expYield = 0,
+		.evYield_Attack = 3,
+		.item1 = ITEM_NONE, .item2 = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(100), .eggCycles = 0,
+		.friendship = 50, .growthRate = GROWTH_SLOW,
+		.eggGroup1 = EGG_GROUP_UNDISCOVERED, .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+		.ability1 = ABILITY_EMBODYASPECTCORNERSTONEMASK, .ability2 = ABILITY_NONE,
+		.hiddenAbility = ABILITY_NONE, .noFlip = TRUE,
+	},
+
 	[SPECIES_ARCHALUDON] =
 	{
 		.baseHP 		= 90,
@@ -46413,4 +46473,3 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = TRUE,
 	},
 };
-
