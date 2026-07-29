@@ -48396,11 +48396,11 @@ const struct BaseStats gBaseStats[] =
 	[SPECIES_ROSERADE_MEGA] =
 	{
 		.baseHP = 60,
-		.baseAttack = 70,
-		.baseDefense = 85,
-		.baseSpAttack = 154,
+		.baseAttack = 154,
+		.baseDefense = 95,
+		.baseSpAttack = 70,
 		.baseSpDefense = 135,
-		.baseSpeed = 111,
+		.baseSpeed = 101,
 		.type1 = TYPE_GRASS,
 		.type2 = TYPE_POISON,
 		.catchRate = 75,

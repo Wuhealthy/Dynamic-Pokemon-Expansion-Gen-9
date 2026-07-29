@@ -7483,7 +7483,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_ROSERADE_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x4,
+		.y_offset = 0x1,
 	},
 	[SPECIES_MISMAGIUS_MEGA] =
 	{
