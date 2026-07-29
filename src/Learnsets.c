@@ -8240,6 +8240,7 @@ static const struct LevelUpMove sBudewLevelUpLearnset[] = {
 
 static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_VENOMDRENCH),
+	LEVEL_UP_MOVE( 1, MOVE_FIRELASH),
 	LEVEL_UP_MOVE( 1, MOVE_GRASSYTERRAIN),
 	LEVEL_UP_MOVE( 1, MOVE_WEATHERBALL),
 	LEVEL_UP_MOVE( 1, MOVE_POISONSTING),
