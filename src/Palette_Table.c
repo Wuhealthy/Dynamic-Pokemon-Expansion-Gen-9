@@ -252,6 +252,7 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES] =
 	[SPECIES_LAPRAS] =               {gFrontSprite131LaprasPal, SPECIES_LAPRAS, 0x0},
 	[SPECIES_DITTO] =                {gFrontSprite132DittoPal, SPECIES_DITTO, 0x0},
 	[SPECIES_EEVEE] =                {gFrontSprite133EeveePal, SPECIES_EEVEE, 0x0},
+	[SPECIES_EEVEE_HERO] =           {gFrontSprite133EeveeHeroPal, SPECIES_EEVEE_HERO, 0x0},
 	[SPECIES_VAPOREON] =             {gFrontSprite134VaporeonPal, SPECIES_VAPOREON, 0x0},
 	[SPECIES_JOLTEON] =              {gFrontSprite135JolteonPal, SPECIES_JOLTEON, 0x0},
 	[SPECIES_FLAREON] =              {gFrontSprite136FlareonPal, SPECIES_FLAREON, 0x0},

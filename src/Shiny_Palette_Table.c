@@ -252,6 +252,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES] =
 	[SPECIES_LAPRAS] =               {gBackShinySprite131LaprasPal, SPECIES_LAPRAS + NUM_SPECIES, 0x0},
 	[SPECIES_DITTO] =                {gBackShinySprite132DittoPal, SPECIES_DITTO + NUM_SPECIES, 0x0},
 	[SPECIES_EEVEE] =                {gBackShinySprite133EeveePal, SPECIES_EEVEE + NUM_SPECIES, 0x0},
+	[SPECIES_EEVEE_HERO] =           {gBackShinySprite133EeveeheroPal, SPECIES_EEVEE_HERO + NUM_SPECIES, 0x0},
 	[SPECIES_VAPOREON] =             {gBackShinySprite134VaporeonPal, SPECIES_VAPOREON + NUM_SPECIES, 0x0},
 	[SPECIES_JOLTEON] =              {gBackShinySprite135JolteonPal, SPECIES_JOLTEON + NUM_SPECIES, 0x0},
 	[SPECIES_FLAREON] =              {gBackShinySprite136FlareonPal, SPECIES_FLAREON + NUM_SPECIES, 0x0},

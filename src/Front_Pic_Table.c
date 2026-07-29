@@ -138,6 +138,7 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES] =
 	[SPECIES_LAPRAS] =               {gFrontSprite131LaprasTiles, (64 * 64) / 2, SPECIES_LAPRAS},
 	[SPECIES_DITTO] =                {gFrontSprite132DittoTiles, (64 * 64) / 2, SPECIES_DITTO},
 	[SPECIES_EEVEE] =                {gFrontSprite133EeveeTiles, (64 * 64) / 2, SPECIES_EEVEE},
+	[SPECIES_EEVEE_HERO] =           {gFrontSprite133EeveeHeroTiles, (64 * 64) / 2, SPECIES_EEVEE_HERO},
 	[SPECIES_VAPOREON] =             {gFrontSprite134VaporeonTiles, (64 * 64) / 2, SPECIES_VAPOREON},
 	[SPECIES_JOLTEON] =              {gFrontSprite135JolteonTiles, (64 * 64) / 2, SPECIES_JOLTEON},
 	[SPECIES_FLAREON] =              {gFrontSprite136FlareonTiles, (64 * 64) / 2, SPECIES_FLAREON},

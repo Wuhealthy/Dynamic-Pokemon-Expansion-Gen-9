@@ -673,6 +673,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x56,
 		.y_offset = 0xb,
 	},
+	[SPECIES_EEVEE_HERO] =
+	{
+		.size = 0x0,
+		.y_offset = 0x1,
+	},
 	[SPECIES_VAPOREON] =
 	{
 		.size = 0x67,
