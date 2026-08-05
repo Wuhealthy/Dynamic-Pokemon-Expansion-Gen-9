@@ -1,5 +1,7 @@
 #pragma once
 
+#include "za_mega_sprite_data.h"
+
 extern const u8 gFrontSprite000NoneTiles[];
 extern const u8 gFrontSprite001BulbasaurTiles[];
 extern const u8 gFrontSprite002IvysaurTiles[];
