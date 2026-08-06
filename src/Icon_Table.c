@@ -736,6 +736,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_ALOMOMOLA] =            gIconSprite647AlomomolaTiles,
 	[SPECIES_JOLTIK] =               gIconSprite648JoltikTiles,
 	[SPECIES_GALVANTULA] =           gIconSprite649GalvantulaTiles,
+	[SPECIES_GALVANTULA_A] =         gIconSprite649GalvantulaTiles,
 	[SPECIES_FERROSEED] =            gIconSprite650FerroseedTiles,
 	[SPECIES_FERROTHORN] =           gIconSprite651FerrothornTiles,
 	[SPECIES_KLINK] =                gIconSprite652KlinkTiles,

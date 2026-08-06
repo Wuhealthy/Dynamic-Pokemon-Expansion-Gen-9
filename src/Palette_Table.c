@@ -771,6 +771,7 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES] =
 	[SPECIES_ALOMOMOLA] =            {gFrontSprite647AlomomolaPal, SPECIES_ALOMOMOLA, 0x0},
 	[SPECIES_JOLTIK] =               {gFrontSprite648JoltikPal, SPECIES_JOLTIK, 0x0},
 	[SPECIES_GALVANTULA] =           {gFrontSprite649GalvantulaPal, SPECIES_GALVANTULA, 0x0},
+	[SPECIES_GALVANTULA_A] =         {gFrontSprite649Galvantula1Pal, SPECIES_GALVANTULA_A, 0x0},
 	[SPECIES_FERROSEED] =            {gFrontSprite650FerroseedPal, SPECIES_FERROSEED, 0x0},
 	[SPECIES_FERROTHORN] =           {gFrontSprite651FerrothornPal, SPECIES_FERROTHORN, 0x0},
 	[SPECIES_KLINK] =                {gFrontSprite652KlinkPal, SPECIES_KLINK, 0x0},

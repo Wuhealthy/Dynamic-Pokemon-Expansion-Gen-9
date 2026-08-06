@@ -657,6 +657,7 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES] =
 	[SPECIES_ALOMOMOLA] =            {gFrontSprite647AlomomolaTiles, (64 * 64) / 2, SPECIES_ALOMOMOLA},
 	[SPECIES_JOLTIK] =               {gFrontSprite648JoltikTiles, (64 * 64) / 2, SPECIES_JOLTIK},
 	[SPECIES_GALVANTULA] =           {gFrontSprite649GalvantulaTiles, (64 * 64) / 2, SPECIES_GALVANTULA},
+	[SPECIES_GALVANTULA_A] =         {gFrontSprite649Galvantula1Tiles, (64 * 64) / 2, SPECIES_GALVANTULA_A},
 	[SPECIES_FERROSEED] =            {gFrontSprite650FerroseedTiles, (64 * 64) / 2, SPECIES_FERROSEED},
 	[SPECIES_FERROTHORN] =           {gFrontSprite651FerrothornTiles, (64 * 64) / 2, SPECIES_FERROTHORN},
 	[SPECIES_KLINK] =                {gFrontSprite652KlinkTiles, (64 * 64) / 2, SPECIES_KLINK},

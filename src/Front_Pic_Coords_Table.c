@@ -3258,6 +3258,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0xa,
 	},
+	[SPECIES_GALVANTULA_A] =
+	{
+		.size = 0x0,
+		.y_offset = 0x7,
+	},
 	[SPECIES_FERROSEED] =
 	{
 		.size = 0x0,
