@@ -33275,7 +33275,7 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_GALVANTULA_A] =
 	{
-		.baseHP = 100,
+		.baseHP = 85,
 		.baseAttack = 131,
 		.baseDefense = 93,
 		.baseSpAttack = 60,
@@ -33299,10 +33299,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_FAST,
 		.eggGroup1 = EGG_GROUP_BUG,
 		.eggGroup2 = EGG_GROUP_BUG,
-		.ability1 = ABILITY_COMPOUNDEYES,
-		.ability2 = ABILITY_UNNERVE,
+		.ability1 = ABILITY_GRIDBIND,
+		.ability2 = ABILITY_GRIDBIND,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_SWARM,
+		.hiddenAbility = ABILITY_GRIDBIND,
 		.noFlip = TRUE,
 	},
 
