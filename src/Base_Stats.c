@@ -4402,12 +4402,12 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_EEVEE_HERO] =
 	{
-		.baseHP = 55,
+		.baseHP = 70,
 		.baseAttack = 110,
-		.baseDefense = 100,
-		.baseSpAttack = 90,
-		.baseSpDefense = 130,
-		.baseSpeed = 110,
+		.baseDefense = 81,
+		.baseSpAttack = 65,
+		.baseSpDefense = 129,
+		.baseSpeed = 100,
 		.type1 = TYPE_NORMAL,
 		.type2 = TYPE_NORMAL,
 		.catchRate = 45,
@@ -33281,7 +33281,7 @@ const struct BaseStats gBaseStats[] =
 		.baseSpAttack = 60,
 		.baseSpDefense = 93,
 		.baseSpeed = 108,
-		.type1 = TYPE_FIGHTING,
+		.type1 = TYPE_BUG,
 		.type2 = TYPE_ELECTRIC,
 		.catchRate = 75,
 		.expYield = 165,
