@@ -13398,13 +13398,13 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
-	[SPECIES_CUBONE_A] = 
+	[SPECIES_BANETTE_M] = 
 	{	
 		.type = 0x30,
 		.key = 0x3c,
 		.length = 0x0,
 		.pan_sweep = 0x0,
-		.wav = (u8*) 0x857ee10,
+		.wav = (u8*) 0x862f13c,
 		.attack = 0xff,
 		.decay = 0x0,
 		.sustain = 0xff,
@@ -15594,13 +15594,13 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
-	[SPECIES_KOFFING_G] =
-	{
+	[SPECIES_BANETTE_F] =
+	{	
 		.type = 0x30,
 		.key = 0x3c,
 		.length = 0x0,
 		.pan_sweep = 0x0,
-		.wav = (u8*) 0x8583f4c,
+		.wav = (u8*) 0x862f13c,
 		.attack = 0xff,
 		.decay = 0x0,
 		.sustain = 0xff,
