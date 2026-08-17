@@ -210,6 +210,7 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES] =
 	[SPECIES_MUK] =                  {gFrontSprite089MukPal, SPECIES_MUK, 0x0},
 	[SPECIES_SHELLDER] =             {gFrontSprite090ShellderPal, SPECIES_SHELLDER, 0x0},
 	[SPECIES_CLOYSTER] =             {gFrontSprite091CloysterPal, SPECIES_CLOYSTER, 0x0},
+	[SPECIES_CLOYSTER_MEGA] =        {gFrontSprite133CLOYSTERMegaPal, SPECIES_CLOYSTER_MEGA, 0x0},
 	[SPECIES_GASTLY] =               {gFrontSprite092GastlyPal, SPECIES_GASTLY, 0x0},
 	[SPECIES_HAUNTER] =              {gFrontSprite093HaunterPal, SPECIES_HAUNTER, 0x0},
 	[SPECIES_GENGAR] =               {gFrontSprite094GengarPal, SPECIES_GENGAR, 0x0},

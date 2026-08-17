@@ -1561,4 +1561,5 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES] =
 	[SPECIES_CRAWDAUNT_MEGA] =        {gFrontSprite131CrawdauntMegaTiles, (64 * 64) / 2,SPECIES_CRAWDAUNT_MEGA},
 	[SPECIES_SHIFTRY_MEGA] =        {gFrontSprite132ShiftryMegaTiles, (64 * 64) / 2,SPECIES_SHIFTRY_MEGA},
 	[SPECIES_TINKATON_MEGA] =        {gFrontSprite133TinkatonMegaTiles, (64 * 64) / 2,SPECIES_TINKATON_MEGA},
+	[SPECIES_CLOYSTER_MEGA] =        {gFrontSprite133CLOYSTERMegaTiles, (64 * 64) / 2,SPECIES_CLOYSTER_MEGA},
 };

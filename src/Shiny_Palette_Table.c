@@ -210,6 +210,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES] =
 	[SPECIES_MUK] =                  {gBackShinySprite089MukPal, SPECIES_MUK + NUM_SPECIES, 0x0},
 	[SPECIES_SHELLDER] =             {gBackShinySprite090ShellderPal, SPECIES_SHELLDER + NUM_SPECIES, 0x0},
 	[SPECIES_CLOYSTER] =             {gBackShinySprite091CloysterPal, SPECIES_CLOYSTER + NUM_SPECIES, 0x0},
+	[SPECIES_CLOYSTER_MEGA] =        {gBackShinySpriteMegaCLOYSTERPal, SPECIES_CLOYSTER_MEGA + NUM_SPECIES, 0x0},
 	[SPECIES_GASTLY] =               {gBackShinySprite092GastlyPal, SPECIES_GASTLY + NUM_SPECIES, 0x0},
 	[SPECIES_HAUNTER] =              {gBackShinySprite093HaunterPal, SPECIES_HAUNTER + NUM_SPECIES, 0x0},
 	[SPECIES_GENGAR] =               {gBackShinySprite094GengarPal, SPECIES_GENGAR + NUM_SPECIES, 0x0},

@@ -1561,4 +1561,5 @@ const struct CompressedSpriteSheet gMonBackPicTable[NUM_SPECIES] =
 	[SPECIES_CRAWDAUNT_MEGA] = 		 {gBackShinySpriteMegaCrawdauntTiles, (64 * 64) / 2,SPECIES_CRAWDAUNT_MEGA},
 	[SPECIES_SHIFTRY_MEGA] = 		 {gBackShinySpriteMegaShiftryTiles, (64 * 64) / 2,SPECIES_SHIFTRY_MEGA},
 	[SPECIES_TINKATON_MEGA] = 		 {gBackShinySpriteMegaTinkatonTiles, (64 * 64) / 2,SPECIES_TINKATON_MEGA},
+	[SPECIES_CLOYSTER_MEGA] = 		 {gBackShinySpriteMegaCLOYSTERTiles, (64 * 64) / 2,SPECIES_CLOYSTER_MEGA},
 };

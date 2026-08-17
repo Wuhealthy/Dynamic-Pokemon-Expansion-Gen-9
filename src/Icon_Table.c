@@ -112,6 +112,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_MUK] =                  gIconSprite089MukTiles,
 	[SPECIES_SHELLDER] =             gIconSprite090ShellderTiles,
 	[SPECIES_CLOYSTER] =             gIconSprite091CloysterTiles,
+	[SPECIES_CLOYSTER_MEGA] =        gIconSprite091CloysterTiles,
 	[SPECIES_GASTLY] =               gIconSprite092GastlyTiles,
 	[SPECIES_HAUNTER] =              gIconSprite093HaunterTiles,
 	[SPECIES_GENGAR] =               gIconSprite094GengarTiles,

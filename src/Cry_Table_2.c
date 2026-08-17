@@ -17250,6 +17250,18 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_CLOYSTER_MEGA] =
+	{
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = (u8*) 0x856b378,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_WIGLETT] =
 	{	
 		.type = 0x30,
