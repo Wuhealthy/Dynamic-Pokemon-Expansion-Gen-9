@@ -150,6 +150,7 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_EEVEEHERO',
     'ABILITY_FLOWERBLADE',
     'ABILITY_GRIDBIND',
+    'ABILITY_BIOSHELL',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their
