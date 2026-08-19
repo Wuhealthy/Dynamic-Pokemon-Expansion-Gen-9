@@ -50177,13 +50177,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_TINKATON_MEGA] =
 	{
-		.baseHP 		= 85,
-		.baseAttack 	= 135,
+		.baseHP 		= 100,
+		.baseAttack 	= 109,
 		.baseDefense 	= 87,
 		.baseSpAttack 	= 70,
-		.baseSpDefense 	= 135,
-		.baseSpeed 		= 94,
-		.type1 = TYPE_FAIRY,
+		.baseSpDefense 	= 118,
+		.baseSpeed 		= 101,
+		.type1 = TYPE_STEEL,
 		.type2 = TYPE_STEEL,
 		.catchRate = 45,
 		.expYield = 0,
@@ -50201,10 +50201,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_SLOW,
 		.eggGroup1 = EGG_GROUP_FAIRY,
 		.eggGroup2 = EGG_GROUP_FAIRY,
-		.ability1 = ABILITY_MOLDBREAKER,
-		.ability2 = ABILITY_MOLDBREAKER,
+		.ability1 = ABILITY_HEAVYHAMMER,
+		.ability2 = ABILITY_HEAVYHAMMER,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_MOLDBREAKER,
+		.hiddenAbility = ABILITY_HEAVYHAMMER,
 		.noFlip = TRUE,
 	},
 
