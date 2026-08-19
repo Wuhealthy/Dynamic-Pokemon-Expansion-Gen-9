@@ -152,6 +152,7 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_GRIDBIND',
     'ABILITY_BIOSHELL',
     'ABILITY_HEAVYHAMMER',
+    'ABILITY_BROKENCLAW',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their
