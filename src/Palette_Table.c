@@ -287,6 +287,7 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES] =
 	[SPECIES_NOCTOWL] =              {gFrontSprite164NoctowlPal, SPECIES_NOCTOWL, 0x0},
 	[SPECIES_LEDYBA] =               {gFrontSprite165LedybaPal, SPECIES_LEDYBA, 0x0},
 	[SPECIES_LEDIAN] =               {gFrontSprite166LedianPal, SPECIES_LEDIAN, 0x0},
+	[SPECIES_LEDIAN_G] =             {gFrontSprite135LedianMegaPal, SPECIES_LEDIAN_G, 0x0},
 	[SPECIES_SPINARAK] =             {gFrontSprite167SpinarakPal, SPECIES_SPINARAK, 0x0},
 	[SPECIES_ARIADOS] =              {gFrontSprite168AriadosPal, SPECIES_ARIADOS, 0x0},
 	[SPECIES_CROBAT] =               {gFrontSprite169CrobatPal, SPECIES_CROBAT, 0x0},

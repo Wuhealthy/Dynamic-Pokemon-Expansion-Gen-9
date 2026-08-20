@@ -205,6 +205,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_NOCTOWL] =              gIconSprite164NoctowlTiles,
 	[SPECIES_LEDYBA] =               gIconSprite165LedybaTiles,
 	[SPECIES_LEDIAN] =               gIconSprite166LedianTiles,
+	[SPECIES_LEDIAN_G] =             gIconSprite166LedianTiles,
 	[SPECIES_SPINARAK] =             gIconSprite167SpinarakTiles,
 	[SPECIES_ARIADOS] =              gIconSprite168AriadosTiles,
 	[SPECIES_CROBAT] =               gIconSprite169CrobatTiles,

@@ -172,6 +172,7 @@ const struct CompressedSpriteSheet gMonBackPicTable[NUM_SPECIES] =
 	[SPECIES_NOCTOWL] =              {gBackShinySprite164NoctowlTiles, (64 * 64) / 2, SPECIES_NOCTOWL},
 	[SPECIES_LEDYBA] =               {gBackShinySprite165LedybaTiles, (64 * 64) / 2, SPECIES_LEDYBA},
 	[SPECIES_LEDIAN] =               {gBackShinySprite166LedianTiles, (64 * 64) / 2, SPECIES_LEDIAN},
+	[SPECIES_LEDIAN_G] =             {gBackShinySpriteMegaLedianTiles, (64 * 64) / 2, SPECIES_LEDIAN_G},
 	[SPECIES_SPINARAK] =             {gBackShinySprite167SpinarakTiles, (64 * 64) / 2, SPECIES_SPINARAK},
 	[SPECIES_ARIADOS] =              {gBackShinySprite168AriadosTiles, (64 * 64) / 2, SPECIES_ARIADOS},
 	[SPECIES_CROBAT] =               {gBackShinySprite169CrobatTiles, (64 * 64) / 2, SPECIES_CROBAT},

@@ -843,6 +843,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x67,
 		.y_offset = 0x6,
 	},
+	[SPECIES_LEDIAN_G] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_SPINARAK] =
 	{
 		.size = 0x54,
