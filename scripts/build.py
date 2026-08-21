@@ -154,6 +154,7 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_HEAVYHAMMER',
     'ABILITY_BROKENCLAW',
     'ABILITY_STELLARENERGY',
+    'ABILITY_SPEEDDIVE',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their

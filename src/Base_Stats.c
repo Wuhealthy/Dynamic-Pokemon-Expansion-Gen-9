@@ -50078,13 +50078,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_FEAROW_MEGA] =
 	{
-		.baseHP = 65,
-		.baseAttack = 134,
-		.baseDefense = 72,
+		.baseHP = 80,
+		.baseAttack = 137,
+		.baseDefense = 89,
 		.baseSpAttack = 61,
-		.baseSpDefense = 68,
-		.baseSpeed = 142,
-		.type1 = TYPE_NORMAL,
+		.baseSpDefense = 81,
+		.baseSpeed = 117,
+		.type1 = TYPE_FLYING,
 		.type2 = TYPE_FLYING,
 		.catchRate = 90,
 		.expYield = 162,
@@ -50102,10 +50102,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_FAST,
 		.eggGroup1 = EGG_GROUP_FLYING,
 		.eggGroup2 = EGG_GROUP_FLYING,
-		.ability1 = ABILITY_MERCILESS,
-		.ability2 = ABILITY_MERCILESS,
+		.ability1 = ABILITY_SPEEDDIVE,
+		.ability2 = ABILITY_SPEEDDIVE,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_MERCILESS,
+		.hiddenAbility = ABILITY_SPEEDDIVE,
 		.noFlip = TRUE,
 	},
 
