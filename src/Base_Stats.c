@@ -46712,14 +46712,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_NINETALES_MEGA] =
 	{
-		.baseHP = 73,
+		.baseHP = 88,
 		.baseAttack = 76,
-		.baseDefense = 85,
-		.baseSpAttack = 130,
-		.baseSpDefense = 121,
-		.baseSpeed = 120,
+		.baseDefense = 80,
+		.baseSpAttack = 121,
+		.baseSpDefense = 104,
+		.baseSpeed = 104,
 		.type1 = TYPE_FIRE,
-		.type2 = TYPE_FAIRY,
+		.type2 = TYPE_FIRE,
 		.catchRate = 75,
 		.expYield = 178,
 		.evYield_HP = 0,
@@ -46745,14 +46745,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_WIGGLYTUFF_MEGA] =
 	{
-		.baseHP = 140,
+		.baseHP = 155,
 		.baseAttack = 70,
-		.baseDefense = 75,
-		.baseSpAttack = 135,
-		.baseSpDefense = 70,
-		.baseSpeed = 45,
+		.baseDefense = 85,
+		.baseSpAttack = 155,
+		.baseSpDefense = 90,
+		.baseSpeed = 85,
 		.type1 = TYPE_FIRE,
-		.type2 = TYPE_FAIRY,
+		.type2 = TYPE_FIRE,
 		.catchRate = 50,
 		.expYield = 109,
 		.evYield_HP = 3,
@@ -46778,13 +46778,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_VENOMOTH_MEGA] =
 	{
-		.baseHP = 65,
+		.baseHP = 80,
 		.baseAttack = 80,
 		.baseDefense = 65,
 		.baseSpAttack = 135,
 		.baseSpDefense = 65,
-		.baseSpeed = 130,
-		.type1 = TYPE_NORMAL,
+		.baseSpeed = 140,
+		.type1 = TYPE_FAIRY,
 		.type2 = TYPE_FAIRY,
 		.catchRate = 90,
 		.expYield = 148,
@@ -46811,13 +46811,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_POLIWRATH_MEGA] =
 	{
-		.baseHP = 90,
-		.baseAttack = 140,
-		.baseDefense = 95,
+		.baseHP = 105,
+		.baseAttack = 150,
+		.baseDefense = 85,
 		.baseSpAttack = 70,
-		.baseSpDefense = 90,
-		.baseSpeed = 125,
-		.type1 = TYPE_WATER,
+		.baseSpDefense = 80,
+		.baseSpeed = 100,
+		.type1 = TYPE_FIGHTING,
 		.type2 = TYPE_FIGHTING,
 		.catchRate = 45,
 		.expYield = 185,
