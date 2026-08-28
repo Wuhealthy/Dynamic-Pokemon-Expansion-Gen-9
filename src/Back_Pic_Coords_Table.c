@@ -558,6 +558,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x85,
 		.y_offset = 0x9,
 	},
+	[SPECIES_WEEZING_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x9,
+	},
 	[SPECIES_RHYHORN] =
 	{
 		.size = 0x85,
@@ -872,6 +877,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x86,
 		.y_offset = 0x6,
+	},
+	[SPECIES_LANTURN_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
 	},
 	[SPECIES_PICHU] =
 	{

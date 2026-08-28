@@ -558,6 +558,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x88,
 		.y_offset = 0x0,
 	},
+	[SPECIES_WEEZING_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_RHYHORN] =
 	{
 		.size = 0x76,
@@ -872,6 +877,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x87,
 		.y_offset = 0xb,
+	},
+	[SPECIES_LANTURN_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
 	},
 	[SPECIES_PICHU] =
 	{

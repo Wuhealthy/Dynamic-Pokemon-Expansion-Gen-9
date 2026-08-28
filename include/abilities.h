@@ -322,7 +322,7 @@
 #define ABILITY_FIREMANE                             316
 #define ABILITY_SILENTGRUDGE                         317    //缄默怨
 #define ABILITY_SPICYSPRAY                           318
-#define ABILITY_FUJIN                                319    //风神
+#define ABILITY_FUJIN                                319    //串联
 #define ABILITY_SONILATE                             320    //音浪皮肤
 #define ABILITY_IMPROVISE                            321    //随机应变
 #define ABILITY_WAVEFIST                             322    //浪花之拳
@@ -340,7 +340,7 @@
 #define ABILITY_THUNDERDEITY                         334    //雷之神
 #define ABILITY_FIREDEITY                            335    //火之神
 #define ABILITY_GRASSDASH                            336    //燃烧之魂
-#define ABILITY_MUTANTADAPT                          337    //变异适应
+#define ABILITY_MUTANTADAPT                          337    //转守为攻
 #define ABILITY_PSYCHOREBOUND                        338    //精神棱镜
 #define ABILITY_SHADOWHEAL                           339    //暗影治愈
 #define ABILITY_EEVEEHERO                            340    //全知全能
