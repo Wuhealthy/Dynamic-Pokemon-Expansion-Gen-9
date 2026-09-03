@@ -243,6 +243,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES] =
 	[SPECIES_STARYU] =               {gBackShinySprite120StaryuPal, SPECIES_STARYU + NUM_SPECIES, 0x0},
 	[SPECIES_STARMIE] =              {gBackShinySprite121StarmiePal, SPECIES_STARMIE + NUM_SPECIES, 0x0},
 	[SPECIES_MR_MIME] =              {gBackShinySprite122MrMimePal, SPECIES_MR_MIME + NUM_SPECIES, 0x0},
+	[SPECIES_MR_MIME_MEGA] =         {gBackShinySpriteMegaMRMIMEPal, SPECIES_MR_MIME_MEGA + NUM_SPECIES, 0x0},
 	[SPECIES_SCYTHER] =              {gBackShinySprite123ScytherPal, SPECIES_SCYTHER + NUM_SPECIES, 0x0},
 	[SPECIES_JYNX] =                 {gBackShinySprite124JynxPal, SPECIES_JYNX + NUM_SPECIES, 0x0},
 	[SPECIES_ELECTABUZZ] =           {gBackShinySprite125ElectabuzzPal, SPECIES_ELECTABUZZ + NUM_SPECIES, 0x0},

@@ -149,6 +149,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_STARMIE] =              gIconSprite121StarmieTiles,
 	[SPECIES_STARMIE_MEGA] =         gIconSprite121StarmieMTiles,
 	[SPECIES_MR_MIME] =              gIconSprite122MrMimeTiles,
+	[SPECIES_MR_MIME_MEGA] =         gIconSprite122MrMimeTiles,
 	[SPECIES_SCYTHER] =              gIconSprite123ScytherTiles,
 	[SPECIES_JYNX] =                 gIconSprite124JynxTiles,
 	[SPECIES_JYNX_MEGA] =            gIconSprite124JynxTiles,

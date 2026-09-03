@@ -128,6 +128,7 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES] =
 	[SPECIES_STARYU] =               {gFrontSprite120StaryuTiles, (64 * 64) / 2, SPECIES_STARYU},
 	[SPECIES_STARMIE] =              {gFrontSprite121StarmieTiles, (64 * 64) / 2, SPECIES_STARMIE},
 	[SPECIES_MR_MIME] =              {gFrontSprite122MrMimeTiles, (64 * 64) / 2, SPECIES_MR_MIME},
+	[SPECIES_MR_MIME_MEGA] =         {gFrontSprite122MrMimeMEGATiles, (64 * 64) / 2, SPECIES_MR_MIME_MEGA},
 	[SPECIES_SCYTHER] =              {gFrontSprite123ScytherTiles, (64 * 64) / 2, SPECIES_SCYTHER},
 	[SPECIES_JYNX] =                 {gFrontSprite124JynxTiles, (64 * 64) / 2, SPECIES_JYNX},
 	[SPECIES_ELECTABUZZ] =           {gFrontSprite125ElectabuzzTiles, (64 * 64) / 2, SPECIES_ELECTABUZZ},

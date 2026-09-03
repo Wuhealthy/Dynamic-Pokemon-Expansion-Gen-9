@@ -7791,4 +7791,9 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x0,
 	},
+	[SPECIES_MR_MIME_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 };

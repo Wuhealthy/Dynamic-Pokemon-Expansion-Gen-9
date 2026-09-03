@@ -7790,4 +7790,9 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x4,
 	},
+	[SPECIES_MR_MIME_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x1,
+	},
 };
