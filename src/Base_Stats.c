@@ -47735,13 +47735,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_GRANBULL_MEGA] =
 	{
-		.baseHP = 90,
+		.baseHP = 105,
 		.baseAttack = 150,
 		.baseDefense = 115,
 		.baseSpAttack = 50,
 		.baseSpDefense = 100,
-		.baseSpeed = 45,
-		.type1 = TYPE_FAIRY,
+		.baseSpeed = 70,
+		.type1 = TYPE_FIGHTING,
 		.type2 = TYPE_FIGHTING,
 		.catchRate = 75,
 		.expYield = 178,
