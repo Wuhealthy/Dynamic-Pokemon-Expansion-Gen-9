@@ -159,6 +159,7 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_AURAGUARD',
     'ABILITY_BRUTALFORCE',
     'ABILITY_PHANTOMWALL',
+    'ABILITY_VAMPIRE',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their
