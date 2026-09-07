@@ -919,6 +919,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_HAWLUCHA_MEGA] =        gIconSprite809HawluchaMTiles,
 	[SPECIES_DEDENNE] =              gIconSprite810DedenneTiles,
 	[SPECIES_CARBINK] =              gIconSprite811CarbinkTiles,
+	[SPECIES_CARBINK_MEGA] =         gIconSprite811CarbinkTiles,
 	[SPECIES_GOOMY] =                gIconSprite812GoomyTiles,
 	[SPECIES_SLIGGOO] =              gIconSprite813SliggooTiles,
 	[SPECIES_GOODRA] =               gIconSprite814GoodraTiles,

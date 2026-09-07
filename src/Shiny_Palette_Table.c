@@ -940,6 +940,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES] =
 	[SPECIES_HAWLUCHA] =             {gBackShinySprite809HawluchaPal, SPECIES_HAWLUCHA + NUM_SPECIES, 0x0},
 	[SPECIES_DEDENNE] =              {gBackShinySprite810DedennePal, SPECIES_DEDENNE + NUM_SPECIES, 0x0},
 	[SPECIES_CARBINK] =              {gBackShinySprite811CarbinkPal, SPECIES_CARBINK + NUM_SPECIES, 0x0},
+	[SPECIES_CARBINK_MEGA] =         {gBackShinySprite811CarbinkMPal, SPECIES_CARBINK_MEGA + NUM_SPECIES, 0x0},
 	[SPECIES_GOOMY] =                {gBackShinySprite812GoomyPal, SPECIES_GOOMY + NUM_SPECIES, 0x0},
 	[SPECIES_SLIGGOO] =              {gBackShinySprite813SliggooPal, SPECIES_SLIGGOO + NUM_SPECIES, 0x0},
 	[SPECIES_GOODRA] =               {gBackShinySprite814GoodraPal, SPECIES_GOODRA + NUM_SPECIES, 0x0},

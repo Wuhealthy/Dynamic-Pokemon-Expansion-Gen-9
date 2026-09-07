@@ -940,6 +940,7 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES] =
 	[SPECIES_HAWLUCHA] =             {gFrontSprite809HawluchaPal, SPECIES_HAWLUCHA, 0x0},
 	[SPECIES_DEDENNE] =              {gFrontSprite810DedennePal, SPECIES_DEDENNE, 0x0},
 	[SPECIES_CARBINK] =              {gFrontSprite811CarbinkPal, SPECIES_CARBINK, 0x0},
+	[SPECIES_CARBINK_MEGA] =         {gFrontSprite811CarbinkMPal, SPECIES_CARBINK_MEGA, 0x0},
 	[SPECIES_GOOMY] =                {gFrontSprite812GoomyPal, SPECIES_GOOMY, 0x0},
 	[SPECIES_SLIGGOO] =              {gFrontSprite813SliggooPal, SPECIES_SLIGGOO, 0x0},
 	[SPECIES_GOODRA] =               {gFrontSprite814GoodraPal, SPECIES_GOODRA, 0x0},

@@ -823,6 +823,7 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES] =
 	[SPECIES_HAWLUCHA] =             {gFrontSprite809HawluchaTiles, (64 * 64) / 2, SPECIES_HAWLUCHA},
 	[SPECIES_DEDENNE] =              {gFrontSprite810DedenneTiles, (64 * 64) / 2, SPECIES_DEDENNE},
 	[SPECIES_CARBINK] =              {gFrontSprite811CarbinkTiles, (64 * 64) / 2, SPECIES_CARBINK},
+	[SPECIES_CARBINK_MEGA] =         {gFrontSprite811CarbinkMTiles, (64 * 64) / 2, SPECIES_CARBINK_MEGA},
 	[SPECIES_GOOMY] =                {gFrontSprite812GoomyTiles, (64 * 64) / 2, SPECIES_GOOMY},
 	[SPECIES_SLIGGOO] =              {gFrontSprite813SliggooTiles, (64 * 64) / 2, SPECIES_SLIGGOO},
 	[SPECIES_GOODRA] =               {gFrontSprite814GoodraTiles, (64 * 64) / 2, SPECIES_GOODRA},
