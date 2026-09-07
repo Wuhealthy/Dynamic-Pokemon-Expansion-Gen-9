@@ -7760,6 +7760,16 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0xC,
 	},
+	[SPECIES_TATSUGIRI_RED_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0xC,
+	},
+	[SPECIES_TATSUGIRI_YELLOW_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0xC,
+	},
 	[SPECIES_BAXCALIBUR_MEGA] =
 	{
 		.size = 0x0,
