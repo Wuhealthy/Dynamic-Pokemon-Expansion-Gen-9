@@ -7423,7 +7423,7 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	[SPECIES_DONPHAN_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0xA,
+		.y_offset = 0x7,
 	},
 	[SPECIES_RAIKOU_MEGA] =
 	{
