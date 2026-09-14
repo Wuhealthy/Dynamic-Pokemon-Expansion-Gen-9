@@ -3248,6 +3248,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x8,
 	},
+	[SPECIES_AMOONGUSS_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x3,
+	},
 	[SPECIES_FRILLISH] =
 	{
 		.size = 0x0,
@@ -3369,6 +3374,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.y_offset = 0x1,
 	},
 	[SPECIES_CRYOGONAL] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_CRYOGONAL_J] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,

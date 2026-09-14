@@ -8442,6 +8442,18 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_AMOONGUSS_J] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryAmoonguss,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_FRILLISH] = 
 	{	
 		.type = 0x30,
@@ -8755,6 +8767,18 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.release = 0x0,
 	},
 	[SPECIES_CRYOGONAL] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryCryogonal,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
+	[SPECIES_CRYOGONAL_J] = 
 	{	
 		.type = 0x30,
 		.key = 0x3c,
