@@ -988,6 +988,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x66,
 		.y_offset = 0x7,
 	},
+	[SPECIES_SUNFLORA_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x9,
+	},
 	[SPECIES_YANMA] =
 	{
 		.size = 0x77,
@@ -2398,6 +2403,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x6,
 	},
+	[SPECIES_CHERRIM_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x9,
+	},
 	[SPECIES_SHELLOS] =
 	{
 		.size = 0x0,
@@ -3082,6 +3092,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0x9,
+	},
+	[SPECIES_CRUSTLE_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x4,
 	},
 	[SPECIES_SCRAGGY] =
 	{
