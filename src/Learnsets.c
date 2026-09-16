@@ -23432,7 +23432,6 @@ const struct LevelUpMove* const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_CRAWDAUNT_MEGA] = sCrawdauntLevelUpLearnset,
 	[SPECIES_SHIFTRY_MEGA] = sShiftryLevelUpLearnset,
 	[SPECIES_TINKATON_MEGA] = sTinkatonLevelUpLearnset,
-	//[SPECIES_PALKIA_PRIMAL] = sPalkiaLevelUpLearnset,
 	[SPECIES_VIVILLON_ARCHIPELAGO] = sVivillonLevelUpLearnset,
 	[SPECIES_VIVILLON_CONTINENTAL] = sVivillonLevelUpLearnset,
 	[SPECIES_VIVILLON_ELEGANT] = sVivillonLevelUpLearnset,
