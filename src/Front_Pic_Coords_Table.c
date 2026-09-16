@@ -1558,6 +1558,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x87,
 		.y_offset = 0x0,
 	},
+	[SPECIES_SWELLOW_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_SHROOMISH] =
 	{
 		.size = 0x54,
@@ -5002,6 +5007,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0x1,
+	},
+	[SPECIES_PALOSSAND_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
 	},
 	[SPECIES_PYUKUMUKU] =
 	{

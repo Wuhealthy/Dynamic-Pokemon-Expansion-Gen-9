@@ -1558,6 +1558,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x86,
 		.y_offset = 0x6,
 	},
+	[SPECIES_SWELLOW_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x6,
+	},
 	[SPECIES_SHROOMISH] =
 	{
 		.size = 0x85,
@@ -5003,6 +5008,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x3,
 	},
+	[SPECIES_PALOSSAND_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_PYUKUMUKU] =
 	{
 		.size = 0x0,
@@ -7654,7 +7664,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_HAXORUS_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x3,
 	},
 	[SPECIES_GOLURK_MEGA] =
 	{
