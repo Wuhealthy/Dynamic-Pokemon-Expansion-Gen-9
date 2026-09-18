@@ -10062,6 +10062,18 @@ const struct ToneData gCryTable[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_GRENINJA_MEGA_Z] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryGreninja,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_BUNNELBY] = 
 	{	
 		.type = 0x30,
@@ -14874,6 +14886,18 @@ const struct ToneData gCryTable[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_POLTEAGEIST_MEGA] =
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryPolteageist,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_HATENNA] =
 	{	
 		.type = 0x30,
@@ -17455,6 +17479,18 @@ const struct ToneData gCryTable[NUM_SPECIES] =
 		.release = 0x0,
 	},
 	[SPECIES_PALAFIN_HERO] =
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryPalafinHero,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
+	[SPECIES_PALAFIN_MEGA] =
 	{	
 		.type = 0x30,
 		.key = 0x3c,

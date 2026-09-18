@@ -5803,6 +5803,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0xb,
 	},
+	[SPECIES_POLTEAGEIST_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_HATENNA] =
 	{
 		.size = 0x0,
@@ -6677,6 +6682,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
+	},
+	[SPECIES_PALAFIN_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x1,
 	},
 	[SPECIES_VAROOM] =
 	{
@@ -7684,6 +7694,11 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
+	},
+	[SPECIES_GRENINJA_MEGA_Z] =
+	{
+		.size = 0x0,
+		.y_offset = 0x1,
 	},
 	[SPECIES_PYROAR_MEGA] =
 	{

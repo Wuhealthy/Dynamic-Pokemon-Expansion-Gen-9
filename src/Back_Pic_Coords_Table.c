@@ -6043,6 +6043,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0xd,
 	},
+	[SPECIES_POLTEAGEIST_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0xc,
+	},
 	[SPECIES_ALCREMIE_BERRY] =
 	{
 		.size = 0x0,
@@ -6674,6 +6679,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.y_offset = 0xf,
 	},
 	[SPECIES_PALAFIN_HERO] =
+	{
+		.size = 0x0,
+		.y_offset = 0x1,
+	},
+	[SPECIES_PALAFIN_MEGA] =
 	{
 		.size = 0x0,
 		.y_offset = 0x1,
@@ -7685,6 +7695,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0xB,
+	},
+	[SPECIES_GRENINJA_MEGA_Z] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
 	},
 	[SPECIES_PYROAR_MEGA] =
 	{
