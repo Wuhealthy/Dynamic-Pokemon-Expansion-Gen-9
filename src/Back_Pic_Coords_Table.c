@@ -7349,7 +7349,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	[SPECIES_HYPNO_MEGA] =
 	{
 		.size = 0x0,
-		.y_offset = 0x0,
+		.y_offset = 0x6,
 	},
 	[SPECIES_ELECTRODE_MEGA] =
 	{
