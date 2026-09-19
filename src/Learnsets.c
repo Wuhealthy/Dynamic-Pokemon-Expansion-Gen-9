@@ -739,6 +739,7 @@ static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
+	LEVEL_UP_MOVE( 0, MOVE_LULLABY),        // TCG催眠曲
 	LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),        // 蓄力
     LEVEL_UP_MOVE( 1, MOVE_ECHOEDVOICE),      // 回声
     LEVEL_UP_MOVE( 1, MOVE_ROUND),            // 轮唱
