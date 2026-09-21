@@ -6038,15 +6038,15 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x2,
 	},
-	[SPECIES_SINISTEA_CHIPPED] =
+	[SPECIES_SINISTCHA_J] =
 	{
 		.size = 0x0,
-		.y_offset = 0x11,
+		.y_offset = 0x0,
 	},
-	[SPECIES_POLTEAGEIST_CHIPPED] =
+	[SPECIES_EXEGGUTOR_J] =
 	{
 		.size = 0x0,
-		.y_offset = 0xb,
+		.y_offset = 0x0,
 	},
 	[SPECIES_ALCREMIE_BERRY] =
 	{
