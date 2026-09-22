@@ -485,9 +485,7 @@ const u16 gGrasslandPage62[] =
 const u16 gGrasslandPage63[] =
 {
 	SPECIES_POLTCHAGEIST,
-	SPECIES_POLTCHAGEIST_ARTISAN,
 	SPECIES_SINISTCHA,
-	SPECIES_SINISTCHA_MASTERPIECE,
 };
 
 const u16 gForestPage1[] =
