@@ -2613,6 +2613,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x6,
 	},
+	[SPECIES_WEAVILE_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x6,
+	},
 	[SPECIES_MAGNEZONE] =
 	{
 		.size = 0x0,
@@ -6437,6 +6442,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 	{
 		.size = 0x0,
 		.y_offset = 0x7,
+	},
+	[SPECIES_LOKIX_J] =
+	{
+		.size = 0x0,
+		.y_offset = 0x5,
 	},
 	[SPECIES_PAWMI] =
 	{
