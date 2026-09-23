@@ -6983,10 +6983,10 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x4,
 	},
-	[SPECIES_SINISTCHA_MASTERPIECE] =
+	[SPECIES_PANGORO_J] =
 	{
 		.size = 0x0,
-		.y_offset = 0x3,
+		.y_offset = 0x6,
 	},
 	[SPECIES_OKIDOGI] =
 	{

@@ -10314,6 +10314,18 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_PANGORO_J] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryPangoro,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_FURFROU] = 
 	{	
 		.type = 0x30,
@@ -18259,18 +18271,6 @@ const struct ToneData gCryTable2[NUM_SPECIES] =
 		.release = 0x0,
 	},
 	[SPECIES_SINISTCHA_J] =
-	{	
-		.type = 0x30,
-		.key = 0x3c,
-		.length = 0x0,
-		.pan_sweep = 0x0,
-		.wav = gCrySinistcha,
-		.attack = 0xff,
-		.decay = 0x0,
-		.sustain = 0xff,
-		.release = 0x0,
-	},
-	[SPECIES_SINISTCHA_MASTERPIECE] =
 	{	
 		.type = 0x30,
 		.key = 0x3c,
