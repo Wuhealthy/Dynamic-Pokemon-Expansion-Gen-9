@@ -7715,12 +7715,22 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x2,
 	},
+	[SPECIES_PYROAR_F_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x2,
+	},
 	[SPECIES_FLOETTE_MEGA] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
 	},
 	[SPECIES_MEOWSTIC_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_MEOWSTIC_F_MEGA] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,

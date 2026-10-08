@@ -10242,6 +10242,18 @@ const struct ToneData gCryTable[NUM_SPECIES] =
 		.sustain = 0xff,
 		.release = 0x0,
 	},
+	[SPECIES_PYROAR_F_MEGA] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryPyroar,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
 	[SPECIES_FLABEBE] = 
 	{	
 		.type = 0x30,
@@ -10375,6 +10387,18 @@ const struct ToneData gCryTable[NUM_SPECIES] =
 		.release = 0x0,
 	},
 	[SPECIES_MEOWSTIC_MEGA] = 
+	{	
+		.type = 0x30,
+		.key = 0x3c,
+		.length = 0x0,
+		.pan_sweep = 0x0,
+		.wav = gCryMeowstic,
+		.attack = 0xff,
+		.decay = 0x0,
+		.sustain = 0xff,
+		.release = 0x0,
+	},
+	[SPECIES_MEOWSTIC_F_MEGA] = 
 	{	
 		.type = 0x30,
 		.key = 0x3c,
