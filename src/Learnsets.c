@@ -23223,6 +23223,7 @@ const struct LevelUpMove* const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_XERNEAS] = sXerneasLevelUpLearnset,
 	[SPECIES_YVELTAL] = sYveltalLevelUpLearnset,
 	[SPECIES_ZYGARDE] = sZygardeLevelUpLearnset,
+	[SPECIES_ZYGARDE50_MEGA] = sZygardeLevelUpLearnset,
 	[SPECIES_DIANCIE] = sDiancieLevelUpLearnset,
 	[SPECIES_HOOPA] = sHoopaLevelUpLearnset,
 	[SPECIES_HOOPA_UNBOUND] = sHoopaUnboundLevelUpLearnset,

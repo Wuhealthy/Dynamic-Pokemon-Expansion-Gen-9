@@ -946,6 +946,7 @@ const u8* const gMonIconTable[NUM_SPECIES] =
 	[SPECIES_XERNEAS] =              gIconSprite824XerneasTiles,
 	[SPECIES_YVELTAL] =              gIconSprite825YveltalTiles,
 	[SPECIES_ZYGARDE] =              gIconSprite826ZygardeTiles,
+	[SPECIES_ZYGARDE50_MEGA] =       gIconSprite826ZygardeTiles,
 	[SPECIES_ZYGARDE_MEGA] =         gIconSprite826ZygardeMTiles,
 	[SPECIES_DIANCIE] =              gIconSprite827DiancieTiles,
 	[SPECIES_HOOPA] =                gIconSprite828HoopaTiles,

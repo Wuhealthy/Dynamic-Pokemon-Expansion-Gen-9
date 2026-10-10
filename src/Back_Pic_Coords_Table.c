@@ -7776,6 +7776,11 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0xF,
 	},
+	[SPECIES_ZYGARDE50_MEGA] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
 	[SPECIES_CRABMINBLE_MEGA] =
 	{
 		.size = 0x0,
