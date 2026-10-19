@@ -46,6 +46,11 @@ ROUTINE_POINTERS = 'routinepointers'
 FUNCTION_REWRITES = 'functionrewrites'
 SPECIAL_INSERTS = 'special_inserts.asm'
 SPECIAL_INSERTS_OUT = 'build/special_inserts.bin'
+ENCODED_REPOINT_SYMBOLS = {'gMonFrontPicTable'}
+FRONT_PIC_TABLE_ADD_KEY1 = 0x0142B16D
+FRONT_PIC_TABLE_SUB_KEY1 = 0x02F318C9
+FRONT_PIC_TABLE_ADD_KEY2 = 0x0006D2F1
+FRONT_PIC_TABLE_SUB_KEY2 = 0x00D1A75D
 
 
 def ExtractPointer(byteList: [bytes]):
@@ -144,10 +149,19 @@ def FunctionWrap(rom: _io.BufferedReader, space: int, hookAt: int, numParams: in
     rom.write(bytes(data))
 
 
-def Repoint(rom: _io.BufferedReader, space: int, repointAt: int, slideFactor=0):
+def EncodeRepointPointer(symbol: str, pointer: int) -> int:
+    if symbol in ENCODED_REPOINT_SYMBOLS:
+        return (pointer + FRONT_PIC_TABLE_ADD_KEY1 - FRONT_PIC_TABLE_SUB_KEY1
+                + FRONT_PIC_TABLE_ADD_KEY2 - FRONT_PIC_TABLE_SUB_KEY2) & 0xFFFFFFFF
+
+    return pointer
+
+
+def Repoint(rom: _io.BufferedReader, space: int, repointAt: int, slideFactor=0, symbol=None):
     rom.seek(repointAt)
 
     space += (0x08000000 + slideFactor)
+    space = EncodeRepointPointer(symbol, space)
     data = (space.to_bytes(4, 'little'))
     rom.write(bytes(data))
 
@@ -166,7 +180,7 @@ def RealRepoint(rom: _io.BufferedReader, offsetTuples: [(int, int, str)]):
         rom.seek(offset)
         pointer = ExtractPointer(rom.read(4))
         pointerList.append(pointer)
-        pointerDict[pointer] = (tup[1] + 0x08000000, tup[2])
+        pointerDict[pointer] = (EncodeRepointPointer(tup[2], tup[1] + 0x08000000), tup[2])
 
     offset = 0
     offsetList = []
@@ -423,7 +437,7 @@ def main():
                             print('Symbol missing:', symbol)
                             continue
 
-                        Repoint(rom, code, offset)
+                        Repoint(rom, code, offset, symbol=symbol)
 
                     if len(line.split()) == 3:
                         symbol, address, slide = line.split()
@@ -434,7 +448,7 @@ def main():
                             print('Symbol missing:', symbol)
                             continue
 
-                        Repoint(rom, code, offset, int(slide))
+                        Repoint(rom, code, offset, int(slide), symbol)
 
         symbolsRepointed = set()
         if os.path.isfile(GENERATED_REPOINTS):
@@ -452,7 +466,7 @@ def main():
                         continue
 
                     symbolsRepointed.add(symbol)
-                    Repoint(rom, code, offset)
+                    Repoint(rom, code, offset, symbol=symbol)
 
         else:
             with open(GENERATED_REPOINTS, 'w') as repointList:
@@ -513,7 +527,7 @@ def main():
                         print('Symbol missing:', symbol)
                         continue
 
-                    Repoint(rom, code, offset, 1)
+                    Repoint(rom, code, offset, 1, symbol)
 
         # Read routine rewrite wrapper from a file
         if os.path.isfile(FUNCTION_REWRITES):

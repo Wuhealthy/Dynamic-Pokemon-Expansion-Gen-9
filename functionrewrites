@@ -1,1 +1,5 @@
 ##
+DecompressPicFromTable_Resolved 0800EC8C 3 0
+HandleLoadSpecialPokePic_Resolved 0800ECC4 4 0
+DecompressPicFromTableDontHandleDeoxys_Resolved 0800F0E0 3 0
+HandleLoadSpecialPokePicDontHandleDeoxys_Resolved 0800F108 4 0

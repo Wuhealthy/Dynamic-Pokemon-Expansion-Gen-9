@@ -119,7 +119,10 @@ EvolutionSceneHook1:
 	mov r1, r9 @personality
 	bl TryGetFemaleGenderedSpecies
 	lsl r0, #0x3
-	ldr r1, =gMonFrontPicTable
+	push {r0}
+	bl ResolveFrontPicTable
+	mov r1, r0
+	pop {r0}
 	add r0, r1
 	ldr r2, =0x80CDF18 | 1
 	bx r2
@@ -132,7 +135,10 @@ EvolutionSceneHook2:
 	mov r1, r9 @personality
 	bl TryGetFemaleGenderedSpecies
 	lsl r0, #0x3
-	ldr r2, =gMonFrontPicTable
+	push {r0}
+	bl ResolveFrontPicTable
+	mov r2, r0
+	pop {r0}
 	add r0, r2
 	ldr r2, =0x80CDF92 | 1
 	bx r2
@@ -145,7 +151,10 @@ EvolutionSceneHook3:
 	mov r1, r6 @personality
 	bl TryGetFemaleGenderedSpecies
 	lsl r0, #0x3
-	ldr r1, =gMonFrontPicTable
+	push {r0}
+	bl ResolveFrontPicTable
+	mov r1, r0
+	pop {r0}
 	add r0, r1
 	ldr r2, =0x80CE1C8 | 1
 	bx r2

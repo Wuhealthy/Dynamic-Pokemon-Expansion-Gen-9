@@ -29,5 +29,9 @@ struct CompressedSpritePalette
 	u16 unused;
 };
 
+const struct CompressedSpriteSheet *ResolveFrontPicTable(void);
+const struct CompressedSpriteSheet *ResolveFrontPicSheet(u16 species);
+const struct CompressedSpriteSheet *DecodeFrontPicSheetPointer(const struct CompressedSpriteSheet *src);
+
 void __attribute__((long_call)) LZ77UnCompWram(const void *src, void *dest);
 void __attribute__((long_call)) DrawSpindaSpots(u16, u32, u8*, u8);

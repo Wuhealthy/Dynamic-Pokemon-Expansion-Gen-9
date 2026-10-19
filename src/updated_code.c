@@ -26,7 +26,6 @@ extern const u16 gPokedexOrderTypeCount;
 extern const struct AlternateDexEntries gAlternateDexEntries[];
 extern const struct AlternateDexEntries gAlternateDexCategories[];
 extern const struct CompressedSpriteSheet gMonBackPicTable[];
-extern const struct CompressedSpriteSheet gMonFrontPicTable[];
 extern const struct CompressedSpritePalette gMonPaletteTable[];
 extern const struct CompressedSpritePalette gMonShinyPaletteTable[];
 
@@ -257,7 +256,10 @@ const u8* TryLoadAlternateDexCategory(u16 species)
 void LoadSpecialPokePic(const struct CompressedSpriteSheet* src, void* dest, u16 species, u32 personality, bool8 isFrontPic)
 {
 	u16 oldSpecies = species;
-	const struct CompressedSpriteSheet* table = isFrontPic ? gMonFrontPicTable : gMonBackPicTable;
+	const struct CompressedSpriteSheet* frontPicTable = ResolveFrontPicTable();
+	const struct CompressedSpriteSheet* table = isFrontPic ? frontPicTable : gMonBackPicTable;
+
+	src = DecodeFrontPicSheetPointer(src);
 
 	species = TryGetFemaleGenderedSpecies(species, personality);
 	if (species != oldSpecies) //Updated sprite
@@ -276,10 +278,10 @@ void LoadSpecialPokePic(const struct CompressedSpriteSheet* src, void* dest, u16
 		if (!isFrontPic)
 			LZ77UnCompWram((void*) gMonBackPicTable[i].data, dest);
 		else
-			LZ77UnCompWram((void*) gMonFrontPicTable[i].data, dest);
+			LZ77UnCompWram((void*) frontPicTable[i].data, dest);
 	}
 	else if (species > NUM_SPECIES) // is species unknown? draw the ? icon
-		LZ77UnCompWram((void*) gMonFrontPicTable[0].data, dest);
+		LZ77UnCompWram((void*) frontPicTable[0].data, dest);
 	else
 		LZ77UnCompWram((void*) src->data, dest);
 
