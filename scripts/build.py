@@ -170,6 +170,8 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_SOOTHELINGSCALE',
     'ABILITY_BOUNTIFULFRUIT',
     'ABILITY_ICECRYSTALPURGE',
+    'ABILITY_REVIVAL',
+    'ABILITY_NIRVANA',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their
