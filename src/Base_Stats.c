@@ -48782,10 +48782,10 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_SLOW,
 		.eggGroup1 = EGG_GROUP_FIELD,
 		.eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-		.ability1 = ABILITY_ADAPTABILITY,
-		.ability2 = ABILITY_ADAPTABILITY,
+		.ability1 = ABILITY_VALIANT,
+		.ability2 = ABILITY_VALIANT,
 		.safariZoneFleeRate = 0,
-		.hiddenAbility = ABILITY_ADAPTABILITY,
+		.hiddenAbility = ABILITY_VALIANT,
 		.noFlip = TRUE,
 	},
 

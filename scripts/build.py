@@ -174,6 +174,7 @@ CANONICAL_U16_ABILITIES = {
     'ABILITY_NIRVANA',
     'ABILITY_SNOOZE',
     'ABILITY_RAGECROWN',
+    'ABILITY_VALIANT',
 }
 
 # Species whose old DPE records used an effect-sharing byte instead of their
