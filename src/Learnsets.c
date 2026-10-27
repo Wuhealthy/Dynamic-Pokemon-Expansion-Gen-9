@@ -13308,7 +13308,6 @@ static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
 
 static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_WATERSHURIKEN),
-	LEVEL_UP_MOVE( 0, MOVE_AQUABLADE),
 	LEVEL_UP_MOVE( 1, MOVE_NIGHTSLASH),
 	LEVEL_UP_MOVE( 1, MOVE_HAZE),
 	LEVEL_UP_MOVE( 1, MOVE_ROLEPLAY),
