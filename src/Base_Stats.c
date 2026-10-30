@@ -49022,13 +49022,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_MAGNEZONE_MEGA] =
 	{
-		.baseHP = 70,
+		.baseHP = 85,
 		.baseAttack = 70,
-		.baseDefense = 145,
-		.baseSpAttack = 170,
-		.baseSpDefense = 135,
+		.baseDefense = 130,
+		.baseSpAttack = 150,
+		.baseSpDefense = 90,
 		.baseSpeed = 45,
-		.type1 = TYPE_ELECTRIC,
+		.type1 = TYPE_STEEL,
 		.type2 = TYPE_STEEL,
 		.catchRate = 30,
 		.expYield = 211,
@@ -49055,13 +49055,13 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_RHYPERIOR_MEGA] =
 	{
-		.baseHP = 115,
+		.baseHP = 130,
 		.baseAttack = 170,
-		.baseDefense = 150,
+		.baseDefense = 170,
 		.baseSpAttack = 55,
-		.baseSpDefense = 75,
-		.baseSpeed = 70,
-		.type1 = TYPE_GROUND,
+		.baseSpDefense = 55,
+		.baseSpeed = 35,
+		.type1 = TYPE_ROCK,
 		.type2 = TYPE_ROCK,
 		.catchRate = 30,
 		.expYield = 217,
@@ -49088,14 +49088,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_ELECTIVIRE_MEGA] =
 	{
-		.baseHP = 75,
+		.baseHP = 90,
 		.baseAttack = 153,
-		.baseDefense = 97,
-		.baseSpAttack = 105,
-		.baseSpDefense = 95,
-		.baseSpeed = 115,
+		.baseDefense = 77,
+		.baseSpAttack = 65,
+		.baseSpDefense = 85,
+		.baseSpeed = 105,
 		.type1 = TYPE_ELECTRIC,
-		.type2 = TYPE_FIGHTING,
+		.type2 = TYPE_ELECTRIC,
 		.catchRate = 30,
 		.expYield = 199,
 		.evYield_HP = 0,
@@ -49121,14 +49121,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_MAGMORTAR_MEGA] =
 	{
-		.baseHP = 75,
-		.baseAttack = 105,
-		.baseDefense = 98,
-		.baseSpAttack = 144,
-		.baseSpDefense = 115,
-		.baseSpeed = 103,
+		.baseHP = 90,
+		.baseAttack = 65,
+		.baseDefense = 77,
+		.baseSpAttack = 155,
+		.baseSpDefense = 95,
+		.baseSpeed = 93,
 		.type1 = TYPE_FIRE,
-		.type2 = TYPE_DARK,
+		.type2 = TYPE_FIRE,
 		.catchRate = 30,
 		.expYield = 199,
 		.evYield_HP = 0,
@@ -49154,14 +49154,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_PORYGONZ_MEGA] =
 	{
-		.baseHP = 85,
-		.baseAttack = 111,
-		.baseDefense = 77,
-		.baseSpAttack = 165,
-		.baseSpDefense = 86,
-		.baseSpeed = 111,
+		.baseHP = 100,
+		.baseAttack = 70,
+		.baseDefense = 80,
+		.baseSpAttack = 150,
+		.baseSpDefense = 85,
+		.baseSpeed = 100,
 		.type1 = TYPE_NORMAL,
-		.type2 = TYPE_PSYCHIC,
+		.type2 = TYPE_NORMAL,
 		.catchRate = 30,
 		.expYield = 185,
 		.evYield_HP = 0,
@@ -49187,14 +49187,14 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_DUSKNOIR_MEGA] =
 	{
-		.baseHP = 45,
-		.baseAttack = 155,
+		.baseHP = 60,
+		.baseAttack = 135,
 		.baseDefense = 135,
-		.baseSpAttack = 80,
-		.baseSpDefense = 105,
+		.baseSpAttack = 45,
+		.baseSpDefense = 65,
 		.baseSpeed = 105,
 		.type1 = TYPE_GHOST,
-		.type2 = TYPE_DARK,
+		.type2 = TYPE_GHOST,
 		.catchRate = 45,
 		.expYield = 210,
 		.evYield_HP = 0,
