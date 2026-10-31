@@ -14868,6 +14868,7 @@ static const struct LevelUpMove sPalossandLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sPyukumukuLevelUpLearnset[] = {
+	LEVEL_UP_MOVE( 1, MOVE_WATERSPORT),      // 1级 玩水
 	LEVEL_UP_MOVE( 1, MOVE_BATONPASS),
 	LEVEL_UP_MOVE( 1, MOVE_HARDEN),
 	LEVEL_UP_MOVE( 5, MOVE_HELPINGHAND),
